@@ -58,10 +58,17 @@ def check_feed(blog_url, session):
             如果 feed 链接可访问，则返回 ['feed', feed_url]；
             如果都不可访问，则返回 ['none', blog_url]。
     """
-    
+    index_url = blog_url.rstrip('/') + '/index.xml'
     atom_url = blog_url.rstrip('/') + '/atom.xml'
     rss_url = blog_url.rstrip('/') + '/rss2.xml'
     feed_url = blog_url.rstrip('/') + '/feed'
+    
+    try:
+        atom_response = session.get(index_url, headers=headers, timeout=timeout)
+        if atom_response.status_code == 200:
+            return ['index', index_url]
+    except requests.RequestException:
+        pass
     
     try:
         atom_response = session.get(atom_url, headers=headers, timeout=timeout)
