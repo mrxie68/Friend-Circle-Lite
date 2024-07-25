@@ -5,11 +5,11 @@ import feedparser
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 标准化的请求头
-HEADERS = {
+headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
 }
 
-TIMEOUT = (5, 10) # 连接超时和读取超时，防止requests接受时间过长
+timeout = (5, 10) # 连接超时和读取超时，防止requests接受时间过长
 
 def format_published_time(time_str):
     """
@@ -45,41 +45,60 @@ def check_feed(blog_url, session):
     """
     检查博客的 RSS 或 Atom 订阅链接。
 
+    此函数接受一个博客地址，尝试在其后拼接 '/atom.xml', '/rss2.xml' 和 '/feed'，并检查这些链接是否可访问。
+    Atom 优先，如果都不能访问，则返回 ['none', 源地址]。
+
     参数：
     blog_url (str): 博客的基础 URL。
     session (requests.Session): 用于请求的会话对象。
 
     返回：
     list: 包含类型和拼接后的链接的列表。如果 atom 链接可访问，则返回 ['atom', atom_url]；
-          如果 rss2 链接可访问，则返回 ['rss2', rss_url]；
-          如果 feed 链接可访问，则返回 ['feed', feed_url]；
-          如果都不可访问，则返回 ['none', blog_url]。
+            如果 rss2 链接可访问，则返回 ['rss2', rss_url]；
+            如果 feed 链接可访问，则返回 ['feed', feed_url]；
+            如果都不可访问，则返回 ['none', blog_url]。
     """
     index_url = blog_url.rstrip('/') + '/index.xml'
     atom_url = blog_url.rstrip('/') + '/atom.xml'
     rss_url = blog_url.rstrip('/') + '/rss2.xml'
     feed_url = blog_url.rstrip('/') + '/feed'
     
-    for url in [index_url, atom_url, rss_url, feed_url]:
-        try:
-            response = session.get(url, headers=HEADERS, timeout=TIMEOUT)
-            if response.status_code == 200:
-                if 'index' in url:
-                    return ['index', index_url]
-                elif 'atom' in url:
-                    return ['atom', atom_url]
-                elif 'rss2' in url:
-                    return ['rss2', rss_url]
-                elif 'feed' in url:
-                    return ['feed', feed_url]
-        except requests.RequestException:
-            continue
+    try:
+        atom_response = session.get(index_url, headers=headers, timeout=timeout)
+        if atom_response.status_code == 200:
+            return ['index', index_url]
+    except requests.RequestException:
+        pass
+    
+    try:
+        atom_response = session.get(atom_url, headers=headers, timeout=timeout)
+        if atom_response.status_code == 200:
+            return ['atom', atom_url]
+    except requests.RequestException:
+        pass
+    
+    try:
+        rss_response = session.get(rss_url, headers=headers, timeout=timeout)
+        if rss_response.status_code == 200:
+            return ['rss2', rss_url]
+    except requests.RequestException:
+        pass
+
+    try:
+        feed_response = session.get(feed_url, headers=headers, timeout=timeout)
+        if feed_response.status_code == 200:
+            return ['feed', feed_url]
+    except requests.RequestException:
+        pass
     
     return ['none', blog_url]
 
 def parse_feed(url, session, count=5):
     """
     解析 Atom 或 RSS2 feed 并返回包含网站名称、作者、原链接和每篇文章详细内容的字典。
+
+    此函数接受一个 feed 的地址（atom.xml 或 rss2.xml），解析其中的数据，并返回一个字典结构，
+    其中包括网站名称、作者、原链接和每篇文章的详细内容。
 
     参数：
     url (str): Atom 或 RSS2 feed 的 URL。
@@ -90,7 +109,7 @@ def parse_feed(url, session, count=5):
     dict: 包含网站名称、作者、原链接和每篇文章详细内容的字典。
     """
     try:
-        response = session.get(url, headers=HEADERS, timeout=TIMEOUT)
+        response = session.get(url, headers=headers, timeout=timeout)
         response.encoding = 'utf-8'
         feed = feedparser.parse(response.text)
         
@@ -131,17 +150,14 @@ def process_friend(friend, session, count):
     处理单个朋友的博客信息。
 
     参数：
-    friend (dict): 包含朋友信息的字典 {name, url, logo}。
+    friend (list): 包含朋友信息的列表 [name, blog_url, avatar]。
     session (requests.Session): 用于请求的会话对象。
     count (int): 获取每个博客的最大文章数。
 
     返回：
     dict: 包含朋友博客信息的字典。
     """
-    name = friend.get('name')
-    blog_url = friend.get('url')
-    avatar = friend.get('logo')
-    
+    name, blog_url, avatar = friend
     feed_type, feed_url = check_feed(blog_url, session)
 
     if feed_type != 'none':
@@ -187,16 +203,13 @@ def fetch_and_process_data(json_url, count=5):
     session = requests.Session()
     
     try:
-        response = session.get(json_url, headers=HEADERS, timeout=TIMEOUT)
-        response.raise_for_status()  # 确保响应成功
+        response = session.get(json_url, headers=headers, timeout=timeout)
         friends_data = response.json()
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"无法获取该链接：{json_url}, 出现的问题为：{e}")
         return None
 
-    # 解析朋友信息
-    friends_list = friends_data.get('data', {}).get('attributes', {}).get('friends', [])
-    total_friends = len(friends_list)
+    total_friends = len(friends_data['friends'])
     active_friends = 0
     error_friends = 0
     total_articles = 0
@@ -206,7 +219,7 @@ def fetch_and_process_data(json_url, count=5):
     with ThreadPoolExecutor(max_workers=10) as executor:
         future_to_friend = {
             executor.submit(process_friend, friend, session, count): friend
-            for friend in friends_list
+            for friend in friends_data['friends']
         }
         
         for future in as_completed(future_to_friend):
@@ -233,8 +246,29 @@ def fetch_and_process_data(json_url, count=5):
             'article_num': total_articles,
             'last_updated_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         },
-        'articles': article_data,
-        'error_friends': error_friends_info
+        'article_data': article_data
     }
     
-    return result
+    print("数据处理完成")
+    print("总共有 %d 位朋友，其中 %d 位博客可访问，%d 位博客无法访问" % (total_friends, active_friends, error_friends))
+
+    return result, error_friends_info
+
+def sort_articles_by_time(data):
+    """
+    对文章数据按时间排序
+
+    参数：
+    data (dict): 包含文章信息的字典
+
+    返回：
+    dict: 按时间排序后的文章信息字典
+    """
+    if 'article_data' in data:
+        sorted_articles = sorted(
+            data['article_data'],
+            key=lambda x: datetime.strptime(x['created'], '%Y-%m-%d %H:%M'),
+            reverse=True
+        )
+        data['article_data'] = sorted_articles
+    return data
