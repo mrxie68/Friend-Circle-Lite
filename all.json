@@ -1,18 +1,25 @@
 {
   "statistical_data": {
-    "friends_num": 2,
-    "active_num": 2,
+    "friends_num": 3,
+    "active_num": 3,
     "error_num": 0,
-    "article_num": 40,
-    "last_updated_time": "2024-07-25 23:08:39"
+    "article_num": 15,
+    "last_updated_time": "2024-07-25 23:27:00"
   },
   "article_data": [
     {
       "title": "一键脚本自建 Frp 内网穿透访问家里 NAS 和软路由",
       "created": "2024-07-12 00:03",
       "link": "https://veryjack.com/technique/frp_nas_openwrt/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
+    {
+      "title": "寻找王先生",
+      "created": "2024-07-08 14:45",
+      "link": "https://bokebo.com/archives/1787",
+      "author": "bokebo",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     },
     {
       "title": "《大象席地而坐》值得深思的语录",
@@ -32,22 +39,22 @@
       "title": "再启航，关东 8 日行（计划篇）",
       "created": "2024-06-03 02:19",
       "link": "https://veryjack.com/life/travel-plan-for-tokyo/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "我的 EDC 分享",
       "created": "2024-05-20 01:37",
       "link": "https://veryjack.com/life/edc_sharing/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "Instapaper 还是 Pocket？不妨试试这款新应用 — MarkMark",
       "created": "2024-04-27 02:15",
       "link": "https://veryjack.com/technique/markmark/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "x86精简版openwrt固件分享",
@@ -67,8 +74,8 @@
       "title": "逃离喧嚣，再游巴谷宿集",
       "created": "2024-04-18 15:32",
       "link": "https://veryjack.com/photograph/bagusuji_2/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "家庭网络ipv6使用指南：Nginx Proxy Manager反向代理及证书配置",
@@ -78,214 +85,32 @@
       "avatar": "https://www.brain-hole.org/logo.webp"
     },
     {
-      "title": "2024和2023冬天的一些照片",
-      "created": "2024-03-02 05:41",
-      "link": "https://www.brain-hole.org/post/ruixe/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "title": "未来的一些计划",
+      "created": "2024-01-26 21:54",
+      "link": "https://bokebo.com/archives/1577",
+      "author": "bokebo",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     },
     {
-      "title": "2023年度总结",
-      "created": "2024-01-02 05:41",
-      "link": "https://www.brain-hole.org/post/2023/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "title": "说说我对于朋友圈的看法",
+      "created": "2024-01-15 09:05",
+      "link": "https://bokebo.com/archives/126",
+      "author": "bokebo",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     },
     {
-      "title": "2023，就这样过去了…",
-      "created": "2024-01-01 23:55",
-      "link": "https://veryjack.com/life/that_is_2023/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "title": "2023年终总结",
+      "created": "2023-12-29 20:08",
+      "link": "https://bokebo.com/archives/1373",
+      "author": "bokebo",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     },
     {
-      "title": "华山一日游——领略奇峰之美",
-      "created": "2023-12-17 19:36",
-      "link": "https://www.brain-hole.org/post/huas/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "创意建站：揭秘建站过程中一些效果的实现",
-      "created": "2023-12-04 20:41",
-      "link": "https://www.brain-hole.org/post/brainhole/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "使用windows将AltStore安装到ios——自签ipa应用",
-      "created": "2023-11-25 17:41",
-      "link": "https://www.brain-hole.org/post/altstore/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "再见，小猫咪",
-      "created": "2023-11-20 20:54",
-      "link": "https://veryjack.com/life/goodbye_mimi/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "关于我为什么要建博客",
-      "created": "2023-11-18 00:37",
-      "link": "https://veryjack.com/life/reasons_for_blog/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "七年前的黄山之旅：回忆缱绻如雪花般飘然而至",
-      "created": "2023-11-12 20:45",
-      "link": "https://www.brain-hole.org/post/huangshan/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "AI 思维导图工具 — TreeMind 树图",
-      "created": "2023-11-01 17:31",
-      "link": "https://veryjack.com/technique/shutu/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "使用DALL·E 3为自己创建的3D卡通头像",
-      "created": "2023-11-01 08:36",
-      "link": "https://www.brain-hole.org/post/my-avatar/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "小镇才有的世外桃源",
-      "created": "2023-10-14 21:22",
-      "link": "https://veryjack.com/photograph/utopia/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "Twikoo评论内容及邮件通知模板",
-      "created": "2023-10-09 19:18",
-      "link": "https://www.brain-hole.org/post/twkemail/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "openwrt旁路由设置教程",
-      "created": "2023-10-07 22:41",
-      "link": "https://www.brain-hole.org/post/openwrtlan/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "免费赠送一些贴纸给志同道合的朋友",
-      "created": "2023-10-04 23:41",
-      "link": "https://www.brain-hole.org/post/tag/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "我在车里过了一夜 — 淀山湖半日游",
-      "created": "2023-10-01 17:25",
-      "link": "https://veryjack.com/life/sleep-in-car-at-dianshanhu/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "为什么幼儿的涂鸦看起来奇怪但又充满创意？",
-      "created": "2023-09-21 17:41",
-      "link": "https://www.brain-hole.org/post/ayoue/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "智能家居第一步：为心爱之人制作一盏高质量护眼落地灯",
-      "created": "2023-09-14 12:41",
-      "link": "https://www.brain-hole.org/post/home/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "HomeKit升级后ipad不能当作中枢的解决办法",
-      "created": "2023-08-26 22:41",
-      "link": "https://www.brain-hole.org/post/homekit/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "我为何喜欢秦腔：秦韵如何唤起情感的波澜",
-      "created": "2023-08-25 20:35",
-      "link": "https://www.brain-hole.org/post/my-qqx/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "人生苦短，我写下了自己的愿望清单",
-      "created": "2023-08-03 12:45",
-      "link": "https://veryjack.com/life/my-life-wish-list/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "使用JavaScript给hugo添加繁星效果背景",
-      "created": "2023-07-28 17:33",
-      "link": "https://www.brain-hole.org/post/my-bej/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "借助 Memos 为 WordPress 博客添加「说说」功能",
-      "created": "2023-07-28 15:53",
-      "link": "https://veryjack.com/technique/docker-memos-shuoshuo/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "笔记 | 已 Root 安卓手机开启游戏高帧率",
-      "created": "2023-07-18 20:07",
-      "link": "https://veryjack.com/technique/android_high_frame_rate/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "6月3日，宜嫁娶",
-      "created": "2023-06-04 23:43",
-      "link": "https://veryjack.com/photograph/6_3_wedding/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "播客我都听了啥",
-      "created": "2023-05-27 01:18",
-      "link": "https://veryjack.com/life/my_podcast_list/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "一封给 16 年前的回信",
-      "created": "2023-05-14 22:27",
-      "link": "https://veryjack.com/life/mothers-day/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "Midjourney 为女朋友画一个二次元形象",
-      "created": "2023-04-29 22:51",
-      "link": "https://veryjack.com/technique/midjourney-anime/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "别找了，用 Midjourney 为自己画个专属头像",
-      "created": "2023-04-04 23:11",
-      "link": "https://veryjack.com/technique/midjourney-prompt-for-avatar/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "iOS 极致简洁的浏览器 — Via 浏览器",
-      "created": "2023-03-27 12:29",
-      "link": "https://veryjack.com/technique/via-browser/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
+      "title": "甲流中",
+      "created": "2023-11-30 18:40",
+      "link": "https://bokebo.com/archives/1345",
+      "author": "bokebo",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     }
   ]
 }
