@@ -4,9 +4,16 @@
     "active_num": 3,
     "error_num": 0,
     "article_num": 15,
-    "last_updated_time": "2024-10-17 14:16:06"
+    "last_updated_time": "2024-10-17 20:21:09"
   },
   "article_data": [
+    {
+      "title": "一个小技巧，将 AI 设置为你的搜索引擎",
+      "created": "2024-10-17 18:55",
+      "link": "https://veryjack.com/technique/ai-as-search-engine/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "为什么将图床迁移至cloudflare R2",
       "created": "2024-10-16 18:36",
@@ -53,13 +60,6 @@
       "title": "自定义 Mac 文件夹图标",
       "created": "2024-09-05 22:55",
       "link": "https://veryjack.com/technique/custom_folder/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "再启航，关东 8 日行（游记篇）",
-      "created": "2024-08-08 23:47",
-      "link": "https://veryjack.com/life/tokyo-8-day-trip/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
