@@ -4,9 +4,23 @@
     "active_num": 3,
     "error_num": 0,
     "article_num": 15,
-    "last_updated_time": "2024-11-01 02:15:26"
+    "last_updated_time": "2024-11-01 08:58:20"
   },
   "article_data": [
+    {
+      "title": "今天快乐的一天 [2024-11-01]",
+      "created": "2024-11-01 08:47",
+      "link": "https://www.brain-hole.org/post/2024-11-01-weekly-diary/",
+      "author": "brain hole",
+      "avatar": "https://www.brain-hole.org/logo.webp"
+    },
+    {
+      "title": "使用mkcert自签CA，让本地域名拥有证书。",
+      "created": "2024-10-28 18:36",
+      "link": "https://www.brain-hole.org/post/mkcert/",
+      "author": "brain hole",
+      "avatar": "https://www.brain-hole.org/logo.webp"
+    },
     {
       "title": "一通举报电话背后的故事让我脊背发凉",
       "created": "2024-10-20 04:16",
@@ -50,13 +64,6 @@
       "avatar": "https://www.brain-hole.org/logo.webp"
     },
     {
-      "title": "ipv6进阶：我是如何实现远程访问内网设备？",
-      "created": "2024-09-21 18:36",
-      "link": "https://www.brain-hole.org/post/ipv6s/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
       "title": "MacOS Sequoia 网络问题",
       "created": "2024-09-17 17:42",
       "link": "https://veryjack.com/technique/macos_sequoia_network_issue/",
@@ -76,13 +83,6 @@
       "link": "https://bokebo.com/archives/1787",
       "author": "bokebo",
       "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
-    },
-    {
-      "title": "《大象席地而坐》值得深思的语录",
-      "created": "2024-07-04 19:41",
-      "link": "https://www.brain-hole.org/post/elep/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
     },
     {
       "title": "未来的一些计划",
