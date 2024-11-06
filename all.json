@@ -1,12 +1,19 @@
 {
   "statistical_data": {
     "friends_num": 3,
-    "active_num": 3,
-    "error_num": 0,
-    "article_num": 15,
-    "last_updated_time": "2024-11-06 14:16:01"
+    "active_num": 2,
+    "error_num": 1,
+    "article_num": 10,
+    "last_updated_time": "2024-11-06 20:21:22"
   },
   "article_data": [
+    {
+      "title": "使用WebP和静态公共库优化博客提高访问速度",
+      "created": "2024-11-06 18:36",
+      "link": "https://www.brain-hole.org/post/webp/",
+      "author": "brain hole",
+      "avatar": "https://www.brain-hole.org/logo.webp"
+    },
     {
       "title": "使用mkcert自签CA，让本地域名拥有证书。",
       "created": "2024-10-28 18:36",
@@ -57,13 +64,6 @@
       "avatar": "https://www.brain-hole.org/logo.webp"
     },
     {
-      "title": "ipv6进阶：我是如何实现远程访问内网设备？",
-      "created": "2024-09-21 18:36",
-      "link": "https://www.brain-hole.org/post/ipv6s/",
-      "author": "brain hole",
-      "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
       "title": "MacOS Sequoia 网络问题",
       "created": "2024-09-17 17:42",
       "link": "https://veryjack.com/technique/macos_sequoia_network_issue/",
@@ -76,41 +76,6 @@
       "link": "https://veryjack.com/technique/1panel_reverse_proxy_502_error/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "寻找王先生",
-      "created": "2024-07-08 14:45",
-      "link": "https://bokebo.com/archives/1787",
-      "author": "bokebo",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
-    },
-    {
-      "title": "未来的一些计划",
-      "created": "2024-04-26 21:54",
-      "link": "https://bokebo.com/archives/1577",
-      "author": "bokebo",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
-    },
-    {
-      "title": "说说我对于朋友圈的看法",
-      "created": "2024-01-15 09:05",
-      "link": "https://bokebo.com/archives/126",
-      "author": "bokebo",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
-    },
-    {
-      "title": "2023年终总结",
-      "created": "2023-12-29 20:08",
-      "link": "https://bokebo.com/archives/1373",
-      "author": "bokebo",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
-    },
-    {
-      "title": "甲流中",
-      "created": "2023-11-30 18:40",
-      "link": "https://bokebo.com/archives/1345",
-      "author": "bokebo",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621c4b2531.png"
     }
   ]
 }
