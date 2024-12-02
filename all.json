@@ -4,9 +4,16 @@
     "active_num": 3,
     "error_num": 0,
     "article_num": 15,
-    "last_updated_time": "2024-12-02 20:24:11"
+    "last_updated_time": "2024-12-03 02:16:21"
   },
   "article_data": [
+    {
+      "title": "苹果快捷指令一键同步更新 Memos 和 X",
+      "created": "2024-12-02 22:41",
+      "link": "https://veryjack.com/technique/shortcut_for_x_and_memos/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "黑五了，不看看这些活动么",
       "created": "2024-11-28 23:42",
@@ -69,13 +76,6 @@
       "link": "https://www.brain-hole.org/post/cloudflarer2/",
       "author": "brain hole",
       "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "搞机！给红米 K40 刷一个 PixelExperience",
-      "created": "2024-10-05 22:30",
-      "link": "https://veryjack.com/technique/k40-pixelexperience/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "寻找王先生",
