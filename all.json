@@ -4,9 +4,16 @@
     "active_num": 3,
     "error_num": 0,
     "article_num": 15,
-    "last_updated_time": "2025-01-06 20:21:48"
+    "last_updated_time": "2025-01-07 02:15:29"
   },
   "article_data": [
+    {
+      "title": "我的群晖 NAS 里装了啥",
+      "created": "2025-01-07 00:32",
+      "link": "https://veryjack.com/life/app_in_nas/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "随手拍，放光的小黄",
       "created": "2024-12-29 21:08",
@@ -39,13 +46,6 @@
       "title": "Kagi 搜索引擎美化分享",
       "created": "2024-12-04 23:05",
       "link": "https://veryjack.com/technique/kagi_css/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "苹果快捷指令一键同步更新 Memos 和 X",
-      "created": "2024-12-02 22:41",
-      "link": "https://veryjack.com/technique/shortcut_for_x_and_memos/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
