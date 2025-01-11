@@ -4,9 +4,16 @@
     "active_num": 3,
     "error_num": 0,
     "article_num": 15,
-    "last_updated_time": "2025-01-11 14:14:29"
+    "last_updated_time": "2025-01-11 20:19:41"
   },
   "article_data": [
+    {
+      "title": "小巧的 UPS — 瓦力 W120 开箱",
+      "created": "2025-01-11 18:07",
+      "link": "https://veryjack.com/technique/ups_wali_unboxing/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "我的群晖 NAS 里装了啥",
       "created": "2025-01-07 00:32",
@@ -41,13 +48,6 @@
       "link": "https://www.brain-hole.org/post/homeassistant-ssl/",
       "author": "brain hole",
       "avatar": "https://www.brain-hole.org/logo.webp"
-    },
-    {
-      "title": "Kagi 搜索引擎美化分享",
-      "created": "2024-12-04 23:05",
-      "link": "https://veryjack.com/technique/kagi_css/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
     {
       "title": "致歉与感恩：我的主题BrainSpace开源了",
