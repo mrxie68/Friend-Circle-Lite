@@ -4,9 +4,16 @@
     "active_num": 2,
     "error_num": 1,
     "article_num": 10,
-    "last_updated_time": "2025-02-17 20:22:10"
+    "last_updated_time": "2025-02-18 02:14:53"
   },
   "article_data": [
+    {
+      "title": "小白也能轻松上手！用 Cherry Studio 搭建你的专属 AI 知识库",
+      "created": "2025-02-17 22:54",
+      "link": "https://veryjack.com/study/cherry-studio-ai-rag/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "装备+1，70块不到的磁吸无线充电宝 — 移速 D05",
       "created": "2025-02-17 09:20",
@@ -32,13 +39,6 @@
       "title": "过年小猫咪要留守，我做了哪些准备",
       "created": "2025-01-20 23:01",
       "link": "https://veryjack.com/life/cat_staying_home_alone/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "小巧的 UPS — 瓦力 W120 开箱",
-      "created": "2025-01-11 18:07",
-      "link": "https://veryjack.com/technique/ups_wali_unboxing/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
