@@ -4,9 +4,16 @@
     "active_num": 2,
     "error_num": 1,
     "article_num": 10,
-    "last_updated_time": "2025-06-07 09:02:07"
+    "last_updated_time": "2025-06-07 14:17:09"
   },
   "article_data": [
+    {
+      "title": "又一个 WordPress 友情链接插件",
+      "created": "2025-06-07 13:08",
+      "link": "https://veryjack.com/technique/wordpress_friendlinks_plugin/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "集合！我的AI员工们",
       "created": "2025-06-02 22:27",
@@ -32,13 +39,6 @@
       "title": "我用 AI 做了两个 WordPress 插件 —— 好物/应用分享页",
       "created": "2025-05-01 00:40",
       "link": "https://veryjack.com/technique/two_wordpress_plugin/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "最近买了啥",
-      "created": "2025-04-29 00:13",
-      "link": "https://veryjack.com/life/what_i_bought/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
