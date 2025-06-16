@@ -4,9 +4,16 @@
     "active_num": 1,
     "error_num": 2,
     "article_num": 5,
-    "last_updated_time": "2025-06-16 20:26:54"
+    "last_updated_time": "2025-06-17 02:18:26"
   },
   "article_data": [
+    {
+      "title": "我的 WordPress 博客主题与插件设置分享",
+      "created": "2025-06-17 00:58",
+      "link": "https://veryjack.com/technique/about_my_blog_theme/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "又一个 WordPress 友情链接插件",
       "created": "2025-06-07 13:08",
@@ -32,13 +39,6 @@
       "title": "与其内耗，不如去山里 —— 四明山",
       "created": "2025-05-06 23:01",
       "link": "https://veryjack.com/photograph/simingshan/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "我用 AI 做了两个 WordPress 插件 —— 好物/应用分享页",
-      "created": "2025-05-01 00:40",
-      "link": "https://veryjack.com/technique/two_wordpress_plugin/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     }
