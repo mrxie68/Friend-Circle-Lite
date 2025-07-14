@@ -4,9 +4,16 @@
     "active_num": 1,
     "error_num": 2,
     "article_num": 5,
-    "last_updated_time": "2025-07-14 14:21:36"
+    "last_updated_time": "2025-07-14 20:27:52"
   },
   "article_data": [
+    {
+      "title": "一把趁手的工具 — Nuphy Kick75",
+      "created": "2025-07-14 20:12",
+      "link": "https://veryjack.com/technique/nuphy-kick75/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "随手拍，六月份的尾巴",
       "created": "2025-06-29 23:04",
@@ -32,13 +39,6 @@
       "title": "集合！我的AI员工们",
       "created": "2025-06-02 22:27",
       "link": "https://veryjack.com/technique/my_ai_employees/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "才不到 300？OPPO Enco Free 4 主观体验",
-      "created": "2025-05-17 23:42",
-      "link": "https://veryjack.com/technique/enco_free_4/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     }
