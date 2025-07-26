@@ -4,9 +4,16 @@
     "active_num": 2,
     "error_num": 1,
     "article_num": 10,
-    "last_updated_time": "2025-07-26 09:06:07"
+    "last_updated_time": "2025-07-26 14:19:02"
   },
   "article_data": [
+    {
+      "title": "看了懂车帝的视频，我有一些想法",
+      "created": "2025-07-26 14:05",
+      "link": "https://veryjack.com/life/some_thoughts_about_dcd/",
+      "author": "veryjack",
+      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
+    },
     {
       "title": "一把趁手的工具 — Nuphy Kick75",
       "created": "2025-07-14 20:12",
@@ -32,13 +39,6 @@
       "title": "又一个 WordPress 友情链接插件",
       "created": "2025-06-07 13:08",
       "link": "https://veryjack.com/technique/wordpress_friendlinks_plugin/",
-      "author": "veryjack",
-      "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
-    },
-    {
-      "title": "集合！我的AI员工们",
-      "created": "2025-06-02 22:27",
-      "link": "https://veryjack.com/technique/my_ai_employees/",
       "author": "veryjack",
       "avatar": "https://bu.dusays.com/2023/10/11/652621ea4624d.jpg"
     },
