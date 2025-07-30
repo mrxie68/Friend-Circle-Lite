@@ -124,27 +124,27 @@ function initialize_fc_lite() {
     }
 
     // 显示随机文章的逻辑
-    function displayRandomArticle() {
-        const randomArticle = allArticles[Math.floor(Math.random() * allArticles.length)];
-        randomArticleContainer.innerHTML = `
-            <div class="random-container">
-                <div class="random-container-title">随机钓鱼</div>
-                <div class="random-title">${randomArticle.title}</div>
-                <div class="random-author">作者: ${randomArticle.author}</div>
-            </div>
-            <div class="random-button-container">
-                <a href="#" id="refresh-random-article">刷新</a>
-                <button class="random-link-button" onclick="window.open('${randomArticle.link}', '_blank')">过去转转</button>
-            </div>
-        `;
+    // function displayRandomArticle() {
+    //     const randomArticle = allArticles[Math.floor(Math.random() * allArticles.length)];
+    //     randomArticleContainer.innerHTML = `
+    //         <div class="random-container">
+    //             <div class="random-container-title">随机钓鱼</div>
+    //             <div class="random-title">${randomArticle.title}</div>
+    //             <div class="random-author">作者: ${randomArticle.author}</div>
+    //         </div>
+    //         <div class="random-button-container">
+    //             <a href="#" id="refresh-random-article">刷新</a>
+    //             <button class="random-link-button" onclick="window.open('${randomArticle.link}', '_blank')">过去转转</button>
+    //         </div>
+    //     `;
 
-        // 为刷新按钮添加事件监听器
-        const refreshBtn = document.getElementById('refresh-random-article');
-        refreshBtn.addEventListener('click', function (event) {
-            event.preventDefault(); // 阻止默认的跳转行为
-            displayRandomArticle(); // 调用显示随机文章的逻辑
-        });
-    }
+    //     // 为刷新按钮添加事件监听器
+    //     const refreshBtn = document.getElementById('refresh-random-article');
+    //     refreshBtn.addEventListener('click', function (event) {
+    //         event.preventDefault(); // 阻止默认的跳转行为
+    //         displayRandomArticle(); // 调用显示随机文章的逻辑
+    //     });
+    // }
 
     function showAuthorArticles(author, avatar, link) {
         // 如果不存在，则创建模态框结构
