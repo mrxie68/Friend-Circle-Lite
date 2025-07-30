@@ -15,9 +15,9 @@ function initialize_fc_lite() {
     // 清除之前的内容
     root.innerHTML = '';
 
-    const randomArticleContainer = document.createElement('div');
-    randomArticleContainer.id = 'random-article';
-    root.appendChild(randomArticleContainer);
+    // const randomArticleContainer = document.createElement('div');
+    // randomArticleContainer.id = 'random-article';
+    // root.appendChild(randomArticleContainer);
 
     const container = document.createElement('div');
     container.className = 'articles-container';
@@ -74,7 +74,7 @@ function initialize_fc_lite() {
             <div>更新时间:${stats.last_updated_time}</div>
         `;
 
-        displayRandomArticle(); // 显示随机友链卡片
+        // displayRandomArticle(); // 显示随机友链卡片
 
         const articles = allArticles.slice(start, start + UserConfig.page_turning_number);
 
