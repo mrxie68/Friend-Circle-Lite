@@ -4,7 +4,9 @@ on:
   schedule:
     - cron: "0 */4 * * *"
   workflow_dispatch:
-
+  push:
+    branches:
+      - main  # 监听 main 分支上的文件变动（你也可以指定其他分支）
 env:
   TZ: Asia/Shanghai
 
