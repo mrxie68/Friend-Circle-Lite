@@ -1,20 +1,14 @@
 [
   {
-    "title": "维护通知",
-    "content": "网站将于今晚12点开始维护，预计持续1小时。",
-    "date": "2025-07-30",
-    "important": true
-  },
-  {
     "title": "新功能上线",
-    "content": "我们上线了新的会员系统，欢迎体验！",
-    "date": "2025-07-28",
-    "important": false
+    "content": "会员系统已开放，点击查看",
+    "date": "2025-07-30",
+    "url": "https://example.com/vip",
+    "important": true
   },
   {
-    "title": "安全提示",
-    "content": "请勿泄露账号密码，警惕钓鱼网站。",
-    "date": "2025-07-27",
-    "important": true
+    "title": "安全提醒",
+    "content": "请不要泄露密码",
+    "date": "2025-07-29"
   }
 ]
