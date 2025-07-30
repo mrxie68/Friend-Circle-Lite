@@ -1,14 +1,14 @@
 [
   {
     "title": "新功能上线",
-    "content": "会员系统已开放，点击查看",
-    "date": "2025-07-30",
-    "url": "https://example.com/vip",
+    "content": "优化了友链页面，新增朋友圈功能，同时添加了一些BUG。",
+    "date": "2025-07-31",
+    "url": "/bglink/",
     "important": true
   },
   {
-    "title": "安全提醒",
-    "content": "请不要泄露密码",
-    "date": "2025-07-29"
+    "title": "访问提示",
+    "content": "建议亚洲地区用户使用代理访问本站，以获得更佳体验。",
+    "date": "2025-07-31"
   }
 ]
