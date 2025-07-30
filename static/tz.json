@@ -4,7 +4,7 @@
     "content": "优化了友链页面，新增朋友圈功能，同时添加了一些BUG。",
     "date": "2025-07-31",
     "url": "/bglink/",
-    "important": true
+    "highlightTitle": true
   },
   {
     "title": "访问提示",
