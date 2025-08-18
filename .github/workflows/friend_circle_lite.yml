@@ -143,7 +143,7 @@ jobs:
         with:
           name: 'temp-2'
           path: './temp'
-          retention-days: 30
+          retention-days: 50
 
       - name: git config
         run: |
