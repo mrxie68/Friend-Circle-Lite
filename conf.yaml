@@ -9,7 +9,7 @@
 spider_settings:
   enable: true
   json_url: "https://rss.minsp.org/friend.json"
-  article_count: 15
+  article_count: 30
   merge_result:
     enable: false
     merge_json_url: "https://rss.minsp.org"
