@@ -1,11 +1,11 @@
 name: Friend Circle Lite
 
-on:
+于:
   schedule:
     - cron: "0 */4 * * *"
   workflow_dispatch:
   push:
-    branches:
+    分支:
       - main
 env:
   TZ: Asia/Shanghai
@@ -44,7 +44,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           github_token: ${{secrets.GITHUB_TOKEN}}
-          branch: main
+          分支: main
           name: 'temp'
           path: './temp'
           if_no_artifact_found: warn
@@ -70,10 +70,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Commit changes
+      - name: 提交更改
         run: |
           mkdir pages
-          cp -r main ./static/tz.json ./static/friend.json ./static/index.html ./static/readme.md ./static/favicon.ico ./static/bg-light.webp ./temp/cache.json ./static/bg-dark.webp all.json errors.json pages/
+          # 删除了其中的 ./static/tz.json
+          cp -r main ./static/friend.json ./static/index.html ./static/readme.md ./static/favicon.ico ./static/bg-light.webp ./temp/cache.json ./static/bg-dark.webp all.json errors.json pages/
           cd pages
           git init
           git add .
