@@ -49,10 +49,20 @@ def fetch_and_process_data(json_url: str, specific_RSS: list = None, count: int 
     session = requests.Session()
     try:
         response = session.get(json_url, headers=HEADERS_JSON, timeout=timeout)
+        
+        # 调试输出：如果状态码不是 200，或者返回的不是 JSON，强制打印出网页内容
+        if response.status_code != 200 or 'application/json' not in response.headers.get('Content-Type', ''):
+            logging.error(f"⚠️ 服务器状态异常或非 JSON 格式！状态码: {response.status_code}")
+            logging.error(f"⚠️ 服务器实际返回的内容前 500 个字符: \n{response.text[:500]}")
+            
         friends_data = response.json()
     except Exception as e:
-        logging.error(f"无法获取链接：{json_url} ：{e}", exc_info=True)
-        return None
+        logging.error(f"❌ 解析朋友列表失败：{json_url} ：{e}")
+        if 'response' in locals():
+            logging.error(f"🔍 导致解析失败的服务器返回内容为: \n{response.text[:500]}")
+            
+        # 🌟 核心修复：遇到报错时返回空的数据结构，防止 run.py 拆包崩溃
+        return {'statistical_data': {'friends_num': 0, 'active_num': 0, 'error_num': 0, 'article_num': 0, 'last_updated_time': datetime.now(ZoneInfo("Asia/Shanghai")).strftime('%Y-%m-%d %H:%M:%S')}, 'article_data': []}, []
 
     friends = friends_data.get('friends', [])
     total_friends = len(friends)
