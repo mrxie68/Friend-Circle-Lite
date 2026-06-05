@@ -9,6 +9,8 @@ from friend_circle_lite.utils.cache import load_cache, save_cache
 from friend_circle_lite.single_friend import process_friend
 from friend_circle_lite import HEADERS_JSON, timeout
 
+HEADERS_JSON["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
 def fetch_and_process_data(json_url: str, specific_RSS: list = None, count: int = 5, cache_file: str = None):
     """
     读取 JSON 数据并处理订阅信息，返回统计数据和文章信息。
@@ -210,7 +212,7 @@ def marge_errors_from_json_url(errors, marge_json_url):
     list: 合并后的错误信息列表
     """
     try:
-        response = requests.get(marge_json_url, timeout=10)  # 设置请求超时时间
+        response = requests.get(marge_json_url, headers=HEADERS_JSON, timeout=10)
         marge_errors = response.json()
     except Exception as e:
         logging.error(f"无法获取链接：{marge_json_url}，出现的问题为：{e}", exc_info=True)
