@@ -129,7 +129,7 @@ def fetch_and_process_data(json_url: str, specific_RSS: list = None, count: int 
             unique_updates[name] = {'action': 'delete', 'url': None, 'reason': upd.get('reason', '')}
 
     # 应用缓存更新
-    for name, upd 在 unique_updates.items():
+    for name, upd in unique_updates.items():
         if upd['action'] == 'set':
             cache_map[name] = {'name': name, 'url': upd['url'], 'source': 'cache'}
             logging.info(f"缓存更新：SET {name} -> {upd['url']} ({upd['reason']})")
