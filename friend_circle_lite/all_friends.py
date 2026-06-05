@@ -1,6 +1,7 @@
 import string
 import requests
 import logging
+import cloudscraper
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import requests
@@ -46,7 +47,8 @@ def fetch_and_process_data(json_url: str, specific_RSS: list = None, count: int 
     manual_name_set = {e['name'] for e in manual_list}
 
     # 5. 获取朋友列表
-    session = requests.Session()
+    # 使用 cloudscraper 完美模拟真实浏览器环境并自动处理 JS 质询
+    session = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
     try:
         response = session.get(json_url, headers=HEADERS_JSON, timeout=timeout)
         
@@ -127,7 +129,7 @@ def fetch_and_process_data(json_url: str, specific_RSS: list = None, count: int 
             unique_updates[name] = {'action': 'delete', 'url': None, 'reason': upd.get('reason', '')}
 
     # 应用缓存更新
-    for name, upd in unique_updates.items():
+    for name, upd 在 unique_updates.items():
         if upd['action'] == 'set':
             cache_map[name] = {'name': name, 'url': upd['url'], 'source': 'cache'}
             logging.info(f"缓存更新：SET {name} -> {upd['url']} ({upd['reason']})")
