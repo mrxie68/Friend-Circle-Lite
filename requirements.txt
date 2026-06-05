@@ -1,5 +1,5 @@
 datetime
-requirements
+cloudscraper
 python-dateutil==2.9.0.post0
 requests
 feedparser==6.0.11
