@@ -1,9 +1,0 @@
-{
-    "git": {
-      "branch": "page",
-      "deploymentEnabled": {
-        "main": false
-      }
-    }
-  }
-  
