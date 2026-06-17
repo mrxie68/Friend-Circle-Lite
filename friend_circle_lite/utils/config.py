@@ -1,8 +1,10 @@
 import logging
 import os
 
-import requests
+import cloudscraper
 import yaml
+
+from friend_circle_lite import HEADERS_JSON, timeout
 
 
 def normalize_remote_config(payload):
@@ -30,18 +32,15 @@ def load_remote_config(remote_config):
     if not url:
         return None
 
-    headers = {
-        "Accept": "application/json",
-        "Origin": "https://www.minsp.org",
-        "Referer": "https://www.minsp.org/",
-        "User-Agent": "Friend-Circle-Lite/MinSP-RemoteConfig",
-    }
+    headers = dict(HEADERS_JSON)
+    headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
     token = os.getenv("FCL_REMOTE_CONFIG_TOKEN") or remote_config.get("token")
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    timeout = int(os.getenv("FCL_REMOTE_CONFIG_TIMEOUT", remote_config.get("timeout", 10)) or 10)
-    response = requests.get(url, headers=headers, timeout=timeout)
+    request_timeout = int(os.getenv("FCL_REMOTE_CONFIG_TIMEOUT", remote_config.get("timeout", 10)) or 10)
+    session = cloudscraper.create_scraper(browser={"browser": "chrome", "platform": "windows", "mobile": False})
+    response = session.get(url, headers=headers, timeout=(request_timeout, max(request_timeout, timeout[1])))
     response.raise_for_status()
     return normalize_remote_config(response.json())
 
