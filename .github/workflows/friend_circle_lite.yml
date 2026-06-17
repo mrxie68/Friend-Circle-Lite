@@ -10,9 +10,18 @@ on:
 env:
   TZ: Asia/Shanghai
 
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: friend-circle-lite
+  cancel-in-progress: true
+
 jobs:
   run-first:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Pull Latest Repository
         uses: actions/checkout@v4

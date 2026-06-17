@@ -1,3 +1,7 @@
+remote_config:
+  enable: true
+  url: "https://blapi.minsp.org/api/public/friend-circle/config"
+
 spider_settings:
   enable: true
   json_url: "https://blapi.minsp.org/api/public/friend.json"
