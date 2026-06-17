@@ -9,7 +9,16 @@ from friend_circle_lite import HEADERS_JSON, timeout
 
 def normalize_remote_config(payload):
     data = payload.get("data", payload) if isinstance(payload, dict) else {}
-    config = data.get("config", {}) if isinstance(data, dict) else {}
+    if not isinstance(data, dict):
+        raise ValueError("remote config response must be a JSON object")
+
+    if isinstance(data.get("config"), dict):
+        config = data["config"]
+    elif "spiderSettings" in data or "specificRSS" in data or "display" in data:
+        config = data
+    else:
+        raise ValueError("remote config response missing config")
+
     spider = config.get("spiderSettings", {}) if isinstance(config, dict) else {}
     merge = spider.get("mergeResult", {}) if isinstance(spider, dict) else {}
 
