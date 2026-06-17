@@ -30,7 +30,12 @@ def load_remote_config(remote_config):
     if not url:
         return None
 
-    headers = {"Accept": "application/json", "User-Agent": "Friend-Circle-Lite/MinSP-RemoteConfig"}
+    headers = {
+        "Accept": "application/json",
+        "Origin": "https://www.minsp.org",
+        "Referer": "https://www.minsp.org/",
+        "User-Agent": "Friend-Circle-Lite/MinSP-RemoteConfig",
+    }
     token = os.getenv("FCL_REMOTE_CONFIG_TOKEN") or remote_config.get("token")
     if token:
         headers["Authorization"] = f"Bearer {token}"
