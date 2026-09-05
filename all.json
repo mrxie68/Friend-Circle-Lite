@@ -1,0 +1,158 @@
+{
+  "statistical_data": {
+    "friends_num": 9,
+    "active_num": 7,
+    "error_num": 2,
+    "article_num": 21,
+    "last_updated_time": "2026-09-06 05:58:07"
+  },
+  "article_data": [
+    {
+      "title": "欢迎来龙餐馆",
+      "created": "2026-09-06 08:00",
+      "link": "https://jefftay.com/movies/once-upon-a-time-in-the-middle-east",
+      "author": "按钮与磁带",
+      "avatar": "https://jefftay.com/static/icon.png"
+    },
+    {
+      "title": "偷师：AI图片提示词反推插件，一键拆解主体、构图、光影和风格",
+      "created": "2026-09-03 16:13",
+      "link": "https://www.wangdu.site/software/ai/2388.html",
+      "author": "文武科技柜",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227661.webp"
+    },
+    {
+      "title": "人人都能玩的 AI 玩具 —— AI Passport",
+      "created": "2026-09-02 23:56",
+      "link": "https://veryjack.com/technique/ai_passport/",
+      "author": "Jack’s Space",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227691.webp"
+    },
+    {
+      "title": "ActivityWatch：免费开源自动时间追踪工具，统计电脑软件和网站使用时间",
+      "created": "2026-09-02 16:20",
+      "link": "https://www.wangdu.site/software/system/2387.html",
+      "author": "文武科技柜",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227661.webp"
+    },
+    {
+      "title": "InvoiceFlowAI：免费开源电子发票整理工具，自动下载发票、OCR识别并生成Excel报销汇总",
+      "created": "2026-09-02 16:16",
+      "link": "https://www.wangdu.site/software/bangongyingyong/2386.html",
+      "author": "文武科技柜",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227661.webp"
+    },
+    {
+      "title": "奥德赛",
+      "created": "2026-09-01 08:00",
+      "link": "https://jefftay.com/movies/the-odyssey",
+      "author": "按钮与磁带",
+      "avatar": "https://jefftay.com/static/icon.png"
+    },
+    {
+      "title": "超级礼物",
+      "created": "2026-08-30 08:00",
+      "link": "https://jefftay.com/movies/the-ultimate-gift",
+      "author": "按钮与磁带",
+      "avatar": "https://jefftay.com/static/icon.png"
+    },
+    {
+      "title": "Hello，未来世界的代理人们",
+      "created": "2026-08-06 23:10",
+      "link": "https://dongjunke.cn/posts/2026/08/06/38672.html",
+      "author": "东评西就",
+      "avatar": "https://dongjunke.cn/img/logo.jpeg"
+    },
+    {
+      "title": "chatgpt太夯了！终于手搓出属于自己的博客主题",
+      "created": "2026-07-23 13:15",
+      "link": "https://dongjunke.cn/posts/2026/07/23/14600.html",
+      "author": "东评西就",
+      "avatar": "https://dongjunke.cn/img/logo.jpeg"
+    },
+    {
+      "title": "最近的一些碎片",
+      "created": "2026-07-11 21:39",
+      "link": "https://dongjunke.cn/posts/2026/07/11/57824.html",
+      "author": "东评西就",
+      "avatar": "https://dongjunke.cn/img/logo.jpeg"
+    },
+    {
+      "title": "THYUU/星度主题 26.7.0 小暑测试版更新内容：主题地图源引来天地图和 Mapbox、站点特写迎来交互升级，瞬间动态浏览更流畅",
+      "created": "2026-07-01 10:48",
+      "link": "https://kunkunyu.com/archives/gxRGJTvp",
+      "author": "回忆航线",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227669.webp"
+    },
+    {
+      "title": "我做了一个免费的在线图片压缩工具——VeryPixel",
+      "created": "2026-06-21 19:09",
+      "link": "https://veryjack.com/technique/verypixel/",
+      "author": "Jack’s Space",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227691.webp"
+    },
+    {
+      "title": "从学校到公司，从上海到成都",
+      "created": "2026-06-14 16:48",
+      "link": "https://veryjack.com/life/university_to_company/",
+      "author": "Jack’s Space",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227691.webp"
+    },
+    {
+      "title": "别再写改名脚本了，一个 Vite 插件搞定压缩、校验、自动哈希命名vite-plugin-pack-orchestrator",
+      "created": "2026-04-25 20:00",
+      "link": "https://blog.tianmiao.site/blog/别再写改名脚本了，一个 Vite 插件搞定压缩、校验、自动哈希命名",
+      "author": "天渺studio",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227660.webp"
+    },
+    {
+      "title": "THYUU/星度主题 26.4.0 正式版谷雨更新内容：全新首页及瞬间动态登场",
+      "created": "2026-04-17 19:05",
+      "link": "https://kunkunyu.com/archives/mSnBEEM2",
+      "author": "回忆航线",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227669.webp"
+    },
+    {
+      "title": "给AI装上「丁真语录」skill，vibecoding也能加点笑料",
+      "created": "2026-04-11 20:00",
+      "link": "https://blog.tianmiao.site/blog/给AI装上「丁真语录」skill，vibecoding也能加点笑料",
+      "author": "天渺studio",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227660.webp"
+    },
+    {
+      "title": "前端复古风选型必看！像素UI 、8bitUI 、精简复古风UI",
+      "created": "2026-04-04 20:00",
+      "link": "https://blog.tianmiao.site/blog/前端复古风选型必看！像素UI 、8bitUI 、精简复古风UI",
+      "author": "天渺studio",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227660.webp"
+    },
+    {
+      "title": "THYUU/星度春节限定主题：骅骝开道·一马当先",
+      "created": "2026-02-11 23:29",
+      "link": "https://kunkunyu.com/archives/oQllDH1N",
+      "author": "回忆航线",
+      "avatar": "https://img.minsp.org/images/2026/06/1781227669.webp"
+    },
+    {
+      "title": "如何把家里的石英表改成充电方案",
+      "created": "2026-01-08 08:00",
+      "link": "https://www.minsp.org/posts/clockss/",
+      "author": "一隅之地",
+      "avatar": "https://img.minsp.org/images/2024/public/logo.jpeg"
+    },
+    {
+      "title": "如何安全的让小容量电容爆炸？",
+      "created": "2026-01-03 08:00",
+      "link": "https://www.minsp.org/posts/cex/",
+      "author": "一隅之地",
+      "avatar": "https://img.minsp.org/images/2024/public/logo.jpeg"
+    },
+    {
+      "title": "Win11 右键菜单延迟/卡死？",
+      "created": "2025-10-28 08:00",
+      "link": "https://www.minsp.org/posts/win11i/",
+      "author": "一隅之地",
+      "avatar": "https://img.minsp.org/images/2024/public/logo.jpeg"
+    }
+  ]
+}
